@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca - Economize energia e dinheiro</title>
+    <style>
+        :root {
+            --primary-color: #3a7563;
+            --secondary-color: #a0c1b9;
+            --accent-color: #f4e285;
+            --text-color: #333;
+            --bg-color: #f7f7f7;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        header .logo {
+            float: left;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        header nav {
+            float: right;
+        }
+        
+        header nav ul {
+            list-style-type: none;
+        }
+        
+        header nav ul li {
+            display: inline;
+            padding: 0 10px;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        header nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        
+        #hero {
+            background: linear-gradient(rgba(58, 117, 99, 0.8), rgba(58, 117, 99, 0.8)), url('/api/placeholder/1200/600') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--text-color);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background: #e8d16f;
+        }
+        
+        #features {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .feature-box {
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background: var(--bg-color);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-box img {
+            width: 80px;
+            margin-bottom: 1rem;
+        }
+        
+        #signup {
+            background: var(--secondary-color);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        #signup h2 {
+            margin-bottom: 2rem;
+        }
+        
+        #signup-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        #signup-form input,
+        #signup-form select,
+        #signup-form textarea,
+        #signup-form button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        #signup-form textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        #signup-form button {
+            background: var(--accent-color);
+            color: var(--text-color);
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        #signup-form button:hover {
+            background: #e8d16f;
+        }
+        
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        @media(max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            
+            header {
+                text-align: center;
+            }
+            
+            header .logo,
+            header nav {
+                float: none;
+            }
+            
+            header nav ul li {
+                display: block;
+                padding: 0.5rem 0;
+            }
+            
+            #hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="Logotipo.png" alt="Logo" title="Logo" width="150">
+            <nav>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#features">Recursos</a></li>
+                    <li><a href="#signup">Cadastre-se</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Economize energia e dinheiro com MARCA</h1>
+            <p>Reduza sua conta de luz em até 30% com nosso app inteligente de gerenciamento de energia</p>
+            <a href="#signup" class="btn">Comece Agora - É Grátis!</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="feature-box">
+                <img src="251697.png" alt="Ícone de economia">
+                <h3>Economize Dinheiro</h3>
+                <p>Reduza suas contas de energia em até 30% com nossas dicas personalizadas.</p>
+            </div>
+            <div class="feature-box">
+                <img src="3574253.png" alt="Ícone de sustentabilidade">
+                <h3>Seja Sustentável</h3>
+                <p>Diminua sua pegada de carbono e contribua para um planeta mais saudável.</p>
+            </div>
+            <div class="feature-box">
+                <img src="1085842.png" alt="Ícone de controle">
+                <h3>Controle Total</h3>
+                <p>Gerencie seu consumo de energia em tempo real com nosso painel intuitivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup">
+        <div class="container">
+            <h2>Comece a economizar hoje mesmo!</h2>
+            <form id="signup-form">
+                <input type="text" id="name" placeholder="Seu nome completo" required>
+                <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+                <input type="tel" id="phone" placeholder="Seu telefone (opcional)">
+                <select id="interest" required>
+                    <option value="">Selecione seu principal interesse</option>
+                    <option value="economia">Economia de dinheiro</option>
+                    <option value="sustentabilidade">Sustentabilidade</option>
+                    <option value="tecnologia">Novas tecnologias</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <textarea id="comments" placeholder="Deixe aqui suas observações ou dúvidas (opcional)"></textarea>
+                <button type="submit" class="btn">Quero economizar agora!</button>
+            </form>
+            <p id="signup-message"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MARCA. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Smooth scroll para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Manipulação do formulário
+            const form = document.getElementById('signup-form');
+            const message = document.getElementById('signup-message');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const interest = document.getElementById('interest').value;
+                const comments = document.getElementById('comments').value;
+                
+                // Aqui você normalmente enviaria os dados para seu servidor
+                // Por enquanto, vamos apenas simular uma resposta bem-sucedida
+                message.textContent = `Obrigado, ${name}! Seus dados foram cadastrados com sucesso. Entraremos em contato em breve.`;
+                message.style.color = 'green';
+                form.reset();
+
+                // Limpa a mensagem após 5 segundos
+                setTimeout(() => {
+                    message.textContent = '';
+                }, 5000);
+            });
+
+            // Efeito de fade-in para as feature boxes
+            const fadeInElements = document.querySelectorAll('.feature-box');
+            const fadeInOptions = {
+                threshold: 0.5
+            };
+
+            const fadeInObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, fadeInOptions);
+
+            fadeInElements.forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                fadeInObserver.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
